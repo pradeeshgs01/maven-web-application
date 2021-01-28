@@ -6,7 +6,7 @@ RUN apt-get update -y
 
 RUN apt-get install apache2 -y
 
-#COPY  /home/ubuntu/demoproj/JenkinsDemo/index.html  /var/www/html
+COPY index.html  /var/www/html/index.html
 
 CMD apachectl -D FOREGROUND
 
